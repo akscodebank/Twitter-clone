@@ -10,11 +10,20 @@ function Widgets() {
                 <SearchIcon className="widgets_searchIcon"/>
                 <input placeholder="Search Twitter" type="text" />
             </div>
+
             <div className="widgets_widgetsContainer">
-            <h2>What's happening</h2>
+              <h2>What's happening</h2>
 
-            <TwitterTweetEmbed tweetId={"1292470642361667586"}/>
+            <TwitterTweetEmbed tweetId={"858551177860055040"}/>
 
+            <TwitterTimelineEmbed
+                SourceType="profile"
+                ScreenName="cleverqazi"
+                options={{ height: 400 }}/>
+            
+            <TwitterShareButton 
+                url={"https://facebook.com/cleverprogrammer"}
+                options={{ text: "#reactjs is awesome", via: "cleverqazi"}} />
             </div>
         </div>
     );
